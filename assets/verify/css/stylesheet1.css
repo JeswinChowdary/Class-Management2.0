@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&family=Roboto+Slab&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: url('https://static.vecteezy.com/system/resources/thumbnails/000/374/866/small/Background_1_A.jpg');
+}
+.header {
+    width: 100vw;
+    height: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.headertext {
+    color: white;
+    font-size: 4rem;
+    font-family: Roboto Mono;
+}
+
+.users {
+    display: grid;
+    width: 60vw;
+    margin-left: 20vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 3rem;
+    gap: 20px 50px;
+    
+}
+
+.user {
+    border: solid;
+    background: #db3058;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+}
+.user:hover {
+    background: #5c99fa;
+}
+
+.user-icon {
+    height: 80%;
+    position: relative;
+    top: 10%;
+    left: 2%;
+}
+.username {
+    position: relative;
+    left: 4%;
+    bottom: 15%;
+    font-family: Roboto Slab;
+}
+
+@media all and (max-width: 1150px) {
+    .users {
+        width: 70vw;
+        margin-left: 15vw;
+    }
+}
+@media all and (max-width: 1050px) {
+    .headertext {
+        font-size: 2rem;
+    }
+}
+@media all and (max-width: 550px) {
+    .headertext {
+        font-size: 1rem;
+    }
+}
+@media all and (max-width: 920px) {
+    .users {
+        width: 80vw;
+        margin-left: 10vw;
+    }
+}
+@media all and (max-width: 850px) {
+    .users {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 3rem;
+    }
+}
+@media all and (max-width: 580px) {
+    .users {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 4rem;
+    }
+}
+@media all and (max-width: 350px) {
+    .users {
+        grid-auto-rows: 2.7rem;
+    }
+}

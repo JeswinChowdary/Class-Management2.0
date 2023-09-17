@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet1.css">
+        <!--=============== BOXICONS ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Responsive menu ui - Bedimcode</title>
+        <script defer src="main.js"></script>
+    </head>
+    <body>
+        <!--=============== NAV ===============-->
+        <nav class="nav" id="nav">
+            <div class="nav__menu container" id="nav-menu">
+                <div class="nav__shape"></div>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+                
+                <div class="nav__data">
+                    <div class="nav__mask">
+                        <!-- Change your profile picture -->
+                        <img src="https://www.pngkey.com/png/full/204-2049354_ic-account-box-48px-profile-picture-icon-square.png" alt="" class="nav__img">
+                    </div>
+
+                    <span class="nav__greeting">Hello!</span>
+                    <h1 class="nav__name" id="username"></h1>
+                </div>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="" class="nav__link active-link not-ready">
+                            <i class='bx bx-archive-in' ></i> Notes 
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link not-ready">
+                            <i class='bx bx-alarm'></i> Reminders
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link not-ready">
+                            <i class='bx bx-message-dots'></i> Chat
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link not-ready">
+                            <i class='bx bx-poll'></i> Poll
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--=============== MAIN ===============-->
+        <main class="main" id="main">
+            <!--=============== HEADER ===============-->
+            <header class="header" id="header">
+                <nav class="header__nav container">
+                    <a href="#" class="header__logo">
+                        DPS 9 I
+                    </a>
+    
+                    <!-- Toggle button -->
+                    <div class="header__toggle" id="header-toggle">
+                        <i class='bx bx-grid-alt'>Menu</i>
+                    </div>
+                </nav>
+            </header>
+
+
+            <!-- Website Content here -->
+            <section class="section section__height container" id="home">
+                <h1>NOTES</h1>
+
+
+                <div class="notes-container">
+                    <div class="note">
+                        <span class="note-title">Triangles - Math</span>
+                        <img class='download-icon' src="https://icon-library.com/images/cloud-download-icon/cloud-download-icon-12.jpg">
+                    </div>
+                    <div class="note">
+                        <span class="note-title">Gravitation - Physics </span>
+                        <img class='download-icon' src="https://icon-library.com/images/cloud-download-icon/cloud-download-icon-12.jpg">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
